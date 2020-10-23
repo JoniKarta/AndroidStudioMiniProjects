@@ -60,8 +60,8 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.BookViewHolder
                 .into(holder.bookImage);
         holder.title.setText(listBook.get(position).getTitle());
         holder.author.setText(listBook.get(position).getAuthor());
-        holder.pages.setText(listBook.get(position).getPages());
-        holder.reviews.setText(listBook.get(position).getReviews());
+        holder.pages.setText(listBook.get(position).getPages() + " pages");
+        holder.reviews.setText(listBook.get(position).getReviews() + " reviews");
 
     }
 
